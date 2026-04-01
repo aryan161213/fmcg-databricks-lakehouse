@@ -19,6 +19,9 @@ The project simulates a real-world FMCG scenario involving:
   * Gold (aggregated analytics)
 * Final data stored in **Delta tables**
 
+## Business Logic
+Integrated data from two different companies with conflicting schemas into a single source of truth.
+
 
 ##  Key Features
 
@@ -87,9 +90,8 @@ Data flow:
 Landing → Processing → Archived
 ```
 
-* Used `dbutils.fs.mv()` to move processed files
-* Prevented duplicate processing using MERGE-based upsert logic to ensure only new and updated records are written.
-
+* Automated file movement using `dbutils.fs.mv()` for lifecycle management
+* Leveraged Delta Lake (DeltaTable) to implement MERGE-based upserts, enabling incremental, idempotent pipelines that prevent duplicate processing by writing only new and updated record.
 
 ##  Tech Stack
 
