@@ -87,7 +87,7 @@ Integrated data from two different companies with conflicting schemas into a sin
 Data flow:
 
 ```
-Landing → Processing → Archived
+Landing → Processing 
 ```
 
 * Automated file movement using `dbutils.fs.mv()` for lifecycle management
