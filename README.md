@@ -57,8 +57,8 @@ The project simulates a real-world FMCG scenario involving:
 
 ###  Multi-Source Data Consolidation
 
-* Sports Bar data processed fully (Bronze → Silver → Gold)
-* AtliQ parent data already available at Gold layer
+* Sports Bar data processed fully **(Bronze → Silver → Gold)**
+* Atlikon parent data already available at Gold layer
 * Final step:
    Merged child data into parent Gold table
 
