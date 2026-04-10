@@ -75,6 +75,11 @@ Integrated data from two different companies with conflicting schemas into a sin
   * Total Quantity
   * Average Order Value (AOV)
 
+###  Data Model
+
+* Designed a Star Schema in the Gold layer (fact_orders + dim_customers, dim_products, dim_pricing, dim_date)
+* Built a denormalized view joining all tables for high-speed BI dashboarding
+* Consolidated child company (Sports Bar) Gold data into parent company (Atlikon) unified analytics table
 
 ###  Denormalized Data Model
 
