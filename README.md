@@ -1,4 +1,26 @@
 #  FMCG Data Engineering Pipeline (Databricks | Delta Lake | S3)
+## Table of Contents
+
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Business Logic](#business-logic)
+- [Key Features](#key-features)
+  - [Full Load Processing](#full-load-processing)
+  - [Incremental Processing](#incremental-processing)
+  - [Upsert (MERGE) Logic](#upsert-merge-logic)
+  - [Medallion Architecture](#medallion-architecture)
+  - [Multi-Source Data Consolidation](#multi-source-data-consolidation)
+  - [Aggregation & Analytics](#aggregation--analytics)
+  - [Data Model](#data-model)
+  - [Denormalized Data Model](#denormalized-data-model)
+  - [File Lifecycle Management](#file-lifecycle-management)
+- [Tech Stack](#tech-stack)
+- [Dashboard Insights](#dashboard-insights)
+- [Architecture Diagram](#architecture-diagram)
+- [Dashboard](#dashboard)
+- [Key Learnings](#key-learnings)
+- [Author](#author)
+
 ## Overview
 
 Built an end-to-end data engineering pipeline using **Databricks, PySpark, Delta Lake, and AWS S3**, implementing the **Medallion Architecture (Bronze → Silver → Gold)** with **incremental processing, MERGE-based upserts** and **regex-based data cleaning**, and a **BI-ready Star Schema** for **multi-source data consolidation**
